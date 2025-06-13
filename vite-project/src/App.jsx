@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import React, { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(false);
+  const [submit, setsubmit ] = useState(false);
+  const handlesubmit = (e) =>{
+    e.preventDefault();
+  }
+
+  if(!setUser && !setPassword){
+    setMessage('Both fields are required');
+    setError(true);
+    return;
+  }
+  if(setUser && setPassword){
+    setMessage('Welcome, `${user}`!');
+    setError(false);
+  }
+  
 
   return (
-    <>
+    <div>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Login Page</h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <form action="">
+          <label htmlFor="username">Username:</label>
+          <input type="text" placeholder='username' value={user}  />
+          <label htmlFor="password">Password:</label>
+          <input type="text" placeholder='password' value={password} />
+          <button type="submit" onClick={handlesubmit}>Login</button>
+        </form>
+        <div>
+          {message}
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
