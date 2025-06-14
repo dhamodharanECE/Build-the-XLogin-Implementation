@@ -2,42 +2,68 @@ import './App.css';
 import React, { useState } from 'react'
 
 const App = () => {
-  const [user, setUser] = useState('');
-  const [password, setPassword] = useState('');
+  const [user, setUser] = useState({
+    username: '',
+    password: ''
+  });
   const [message, setMessage] = useState('');
   const [error, setError] = useState(false);
-  const [submit, setsubmit ] = useState(false);
-  const handlesubmit = (e) =>{
+
+  const handleSubmit = (e) =>{
     e.preventDefault();
+    console.log(user);
+    localStorage.setItem('user', JSON.stringify(user));
+
+    if(!user.username || !user.password){
+      setMessage('Both fields are required');
+      setError(true);
+      return;
+    }
+    if(user.username === "user" && user.password  === "password"){
+      setMessage(`Welcome, ${user.username}!`);
+      setError(false);
+    }
+    else
+    {
+    setMessage('Invalid username or password');
+    setError(true); 
+    }
+  };
+
+  const handleChange = (e) =>{
+    setUser({...user,[e.target.name]: e.target.value})
   }
 
-  if(!setUser && !setPassword){
-    setMessage('Both fields are required');
-    setError(true);
-    return;
-  }
-  if(setUser && setPassword){
-    setMessage('Welcome, `${user}`!');
-    setError(false);
-  }
-  
+
 
   return (
-    <div>
+    <div style={{
+      border: '10px solid green',width: "170%", height: "70%",borderRadius:"10px"
+    }}>
       <div>
-        <h1>Login Page</h1>
+        <h1 style={{ color: 'gold' }}>Login Page</h1>
       </div>
+       <p>{message && (
+          <h3 style={{ color: error ? 'red' : 'green' }}>
+            {message}
+          </h3>
+        )} </p>
       <div>
-        <form action="">
-          <label htmlFor="username">Username:</label>
-          <input type="text" placeholder='username' value={user}  />
-          <label htmlFor="password">Password:</label>
-          <input type="text" placeholder='password' value={password} />
-          <button type="submit" onClick={handlesubmit}>Login</button>
+      </div>
+      <div style={{lineHeight: '3', color: "rose", fontSize:'20px'}}>
+        <form style={{ display: 'flex', flexDirection: 'column' }} onSubmit={handleSubmit}>
+          <div>
+          <label style={{ fontSize:"30px"}} htmlFor="username">Username: </label>
+          <input style={{ padding: '10px'}} id='username' name='username' type="text" placeholder='username' value={user.username} onChange={handleChange} required />
+          </div>
+          <div>
+          <label style={{ fontSize:"30px"}} htmlFor="password">Password: </label>
+          <input style={{ padding: '10px'}} id='password' name='password' type="password" placeholder='password' value={user.password} onChange={handleChange} required />
+          </div>
+          <div>
+          <button style={{ padding: '10px', margin:"10px 40px 0 30%", border:"2px solid red", borderRadius:"5px"}} type="Submit" >Login</button>
+          </div>
         </form>
-        <div>
-          {message}
-        </div>
       </div>
     </div>
   )
