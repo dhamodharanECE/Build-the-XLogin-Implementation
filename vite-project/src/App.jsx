@@ -17,6 +17,7 @@ const App = () => {
     if(!user.username || !user.password){
       setMessage('Both fields are required');
       setError(true);
+      console.log("Both fields are required");
       return;
     }
     if(user.username === "user" && user.password  === "password"){
@@ -26,6 +27,7 @@ const App = () => {
     else
     {
     setMessage('Invalid username or password');
+    console.log("Invalid username or password");
     setError(true); 
     }
   };
