@@ -21,6 +21,7 @@ Displays:
 Clean and responsive UI built with CSS.
 
 🧱 Project Structure
+
 XLogin/
 ├── src/
 │   ├── App.js
@@ -49,6 +50,7 @@ npm start
 
 
 View in browser:
+
 Open http://localhost:3000
 
 🧾 Usage Instructions
@@ -87,7 +89,6 @@ Displays “Invalid username or password”.
 1. Development Link:
     ```base
     https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
-
 👨‍💻 Author
 
 Dhamodharan S
