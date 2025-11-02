@@ -86,11 +86,14 @@ Displays “Welcome, user!”
 Invalid Login:
 Displays “Invalid username or password”.
 
-1. Development Link:
-    ```base
-    https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
 👨‍💻 Author
 
 Dhamodharan S
+
 Full Stack Web Developer Intern
+
 📧 Email: dhamodharans206@gmail.com
+
+Development Link:
+```base
+    https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
