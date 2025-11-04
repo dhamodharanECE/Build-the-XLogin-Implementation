@@ -20,18 +20,6 @@ Displays:
 
 Clean and responsive UI built with CSS.
 
-🧱 Project Structure
-
-XLogin/
-├── src/
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-├── public/
-│   └── index.html
-├── package.json
-└── README.md
-
 ⚙️ Installation and Setup
 
 Clone the repository:
