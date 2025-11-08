@@ -91,7 +91,6 @@ Full Stack Web Developer Intern
 ```
 dhamodharans206@gmail.com
 ```
-
 # Development Link:
 ```base
 https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
