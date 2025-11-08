@@ -23,21 +23,19 @@ Clean and responsive UI built with CSS.
 # ⚙️ Installation and Setup
 
 Clone the repository:
-
-git clone 
 ```
-https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
+git clone  https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
 ```
 cd xlogin
 
 Install dependencies:
-
+```
 npm install
-
+```
 Run the app:
-
+```
 npm start
-
+```
 View in browser:
 
 Open 
@@ -74,7 +72,7 @@ CSS3 – Styling and layout
 
 # Check the Crediential:
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a51f9242-4c36-4b91-900c-4f7ece7d7e9f" />
- 
+``` 
 Initial Render:
 Form with Username and Password fields.
 
@@ -83,7 +81,7 @@ Displays “Welcome, user!”
 
 Invalid Login:
 Displays “Invalid username or password”.
-
+```
 # 👨‍💻 Author
 
 Dhamodharan S
