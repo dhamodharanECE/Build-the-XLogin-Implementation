@@ -1,18 +1,18 @@
-🧑‍💻 XLogin - Simple React Login Form
+# 🧑‍💻 XLogin - Simple React Login Form
 
-📌 Overview
+# 📌 Overview
 
 XLogin is a simple React-based login interface.
 
 It includes fields for Username and Password and displays messages based on the validity of the entered credentials.
 
-🎯 Features
+# 🎯 Features
 
 Uses form, label, input, and button elements as per best practices.
 
 Ensures both fields are mandatory before submission.
 
-Displays:
+# Displays:
 
 ✅ "Welcome, user!" if the username is user and password is password.
 
@@ -20,12 +20,14 @@ Displays:
 
 Clean and responsive UI built with CSS.
 
-⚙️ Installation and Setup
+# ⚙️ Installation and Setup
 
 Clone the repository:
 
-git clone https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
-
+git clone 
+```
+https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
+```
 cd xlogin
 
 Install dependencies:
@@ -36,12 +38,14 @@ Run the app:
 
 npm start
 
-
 View in browser:
 
-Open http://localhost:3000
+Open 
+```
+http://localhost:3000
+```
 
-🧾 Usage Instructions
+# 🧾 Usage Instructions
 
 Enter Username as user.
 
@@ -55,7 +59,7 @@ Enter any other combination.
 
 ❌ You’ll see “Invalid username or password”
 
-🧩 Technologies Used
+# 🧩 Technologies Used
 
 React.js – Frontend library
 
@@ -63,8 +67,10 @@ HTML5 – Semantic markup
 
 CSS3 – Styling and layout
 
-📷 Application Preview
+# 📷 Application Preview
 
+
+ 
 Initial Render:
 Form with Username and Password fields.
 
@@ -74,7 +80,7 @@ Displays “Welcome, user!”
 Invalid Login:
 Displays “Invalid username or password”.
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Dhamodharan S
 
@@ -82,6 +88,6 @@ Full Stack Web Developer Intern
 
 📧 Email: dhamodharans206@gmail.com
 
-Development Link:
+# Development Link:
 ```base
 https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
