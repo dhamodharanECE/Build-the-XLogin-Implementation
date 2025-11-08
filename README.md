@@ -72,6 +72,7 @@ CSS3 – Styling and layout
 
 # Check the Crediential:
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a51f9242-4c36-4b91-900c-4f7ece7d7e9f" />
+
 ``` 
 Initial Render:
 Form with Username and Password fields.
@@ -85,6 +86,7 @@ Displays “Invalid username or password”.
 # 👨‍💻 Author
 
 Dhamodharan S
+
 Full Stack Web Developer Intern
 
 📧 Email: 
@@ -94,3 +96,4 @@ dhamodharans206@gmail.com
 # Development Link:
 ```base
 https://github.com/dhamodharanECE/Build-the-XLogin-Implementation.git
+```
