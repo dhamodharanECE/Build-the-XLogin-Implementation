@@ -69,7 +69,11 @@ CSS3 – Styling and layout
 
 # 📷 Application Preview
 
+# Login Page:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ebad9583-2a0d-4247-b0f1-d9b84bd6ea46" />
 
+# Check the Crediential:
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/a51f9242-4c36-4b91-900c-4f7ece7d7e9f" />
  
 Initial Render:
 Form with Username and Password fields.
@@ -83,10 +87,12 @@ Displays “Invalid username or password”.
 # 👨‍💻 Author
 
 Dhamodharan S
-
 Full Stack Web Developer Intern
 
-📧 Email: dhamodharans206@gmail.com
+📧 Email: 
+```
+dhamodharans206@gmail.com
+```
 
 # Development Link:
 ```base
